@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "module": "es2020",
+    "moduleResolution": "bundler",
+    "target": "es2020",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noEmit": false,  // Ensure noEmit is false to emit JS files
+    "outDir": "dist",
+    "lib": [ "esnext" ],
+    "baseUrl": "./",
+    "rootDir": "./",
+    "typeRoots": ["./node_modules/@types", "./types"]
+  },
+  "exclude": [ "node_modules" ],
+  "include": [
+    "**/*.ts",
+    "bin/*.ts"
+  ]
+}

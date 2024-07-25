@@ -1,0 +1,46 @@
+{
+  "name": "firebase-setup",
+  "version": "2.3.12",
+  "description": "Firebase-setup",
+  "type": "module",
+  "main": "dist/app.js",
+ "exports": {
+  "./utils/FirestoreDB": "./dist/utils/FirestoreDB.js",
+  "./utils/FirebaseStoreDB": "./dist/utils/FirebaseStoreDB.js"
+
+},
+
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:copy": "copyfiles -u 1 public/**/* dist/"
+  },
+  "keywords": [],
+  "author": "Craftech360",
+  "contributors": [
+    "Yamuna Rathod <yamunarathod779@gmail.com>"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^7.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "firebase": "^10.12.0",
+    "firebase-admin": "^12.1.0",
+    "joi": "^17.13.1",
+    "jszip": "^3.10.1",
+    "mime-types": "^2.1.35",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "stream": "^0.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.12.12",
+    "copyfiles": "^2.4.1"
+  }
+}
